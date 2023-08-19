@@ -1,14 +1,14 @@
 def fizz_buzz(input):
-    if(int(input) % 3 == 0):
+    if((input % 3 == 0) and (input % 5 == 0)):
+       return "Fizz Buzz"
+       
+    elif(input % 3 == 0):
        return "Fizz"
        
-    elif(int(input) % 5 == 0):
+    elif(input % 5 == 0):
        return "Buzz"
-      
-    else:
-       return input
+       
+    #No need to write "else:" with indentation:   
+    return input
         
-
-
-
-print(fizz_buzz(7))
+print(fizz_buzz(15))
